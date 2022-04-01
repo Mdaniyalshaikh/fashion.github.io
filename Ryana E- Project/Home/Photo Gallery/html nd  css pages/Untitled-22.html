@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<style>
+input[type=checkbox]{
+	display:none;
+}
+.lightbox{
+	width:100%;
+	position:relative;
+	top:-20px;
+	right:0;
+	left:0;
+	height:730px;
+	background:rgba(0, 0, 0, 0.69);
+	transition:all ease-in 300ms;
+}
+.lightbox .img{
+	margin:1.92em;
+	padding:1em 1em 2.24em 1em;
+	margin-left:30%;
+}
+/* variables classes */
+.pointer{
+	cursor:pointer;
+}
+.fr {
+	float:right;
+}
+#call:checked ~ .lightbox{
+	visibility:visible;
+}
+#mdiv {
+  width: 25px;
+  height: 25px;
+  margin-top:-660px;
+  margin-left:1000px;
+}
+
+.mdiv {
+  height: 25px;
+  width: 2px;
+  margin-left: 12px;
+  background-color:#FFF;
+  transform: rotate(45deg);
+  Z-index: 1;
+}
+
+.md {
+  height: 25px;
+  width: 2px;
+  background-color:#FFF;
+  transform: rotate(90deg);
+  Z-index: 2;
+}
+</style>
+<div class="lightbox">
+<div class="img">
+<img src="../IMAGES/20210128_211812.png" style="width:600px; height:600px; margin-top:50px">
+<a href="../Untitled-2.html"><div id="mdiv">
+  <div class="mdiv">
+    <div class="md"></div>
+  </div>
+</div></a>
+</div>
+</body>
+</html>

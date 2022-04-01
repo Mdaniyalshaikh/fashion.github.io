@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+
+<style>
+input[type=checkbox]{
+	display:none;
+}
+.lightbox{
+	width:100%;
+	position:relative;
+	top:-20px;
+	right:0;
+	left:0;
+	height:730px;
+	background:rgba(0, 0, 0, 0.69);
+	transition:all ease-in 300ms;
+}
+.lightbox .img{
+	margin:1.92em;
+	padding:1em 1em 2.24em 1em;
+	margin-left:30%;
+}
+/* variables classes */
+.pointer{
+	cursor:pointer;
+}
+.fr {
+	float:right;
+}
+#call:checked ~ .lightbox{
+	visibility:visible;
+}
+.button
+{
+	position:relative;
+	text-align:center;
+	width:200px;
+	padding:40px;
+	font-size:30px;
+	color:#15f4ee;
+	font-weight:400;
+	border:5px;
+	text-transform:uppercase;
+	letter-spacing:15px;
+	cursor:pointer;
+	border-radius:12px;
+	margin-left:-440px;
+	margin-top:200px;
+	transition:1.5s;
+}
+.button:hover
+{
+	box-shadow:0 5px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+	0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+	text-shadow:0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
+</style>
+<div class="lightbox">
+<div class="img">
+<img src="../IMAGES/20210128_211454.png" style="width:600px; height:600px">
+<a href="../Untitled-2.html" class="button">Close</a>
+</div>
+</body>
+</html>
